@@ -1,4 +1,5 @@
 import wandb
+import tqdm
 import torch.nn.functional as F
 import torch.nn as nn
 import torch
@@ -18,6 +19,7 @@ def train_g(generator,
           path_last_epoch='only_gen_',
           path_best_model='only_best_gen_'
           ):
+    DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     best_loss = best_loss
     generator.train()
     generator = generator.to(DEVICE)
@@ -53,16 +55,17 @@ def train_epoch_g(generator,
                 opt_generator,
                 train_loader,
                 logging=False):
+    DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
     loss_ = 0
     step_ = 0
-    for x, y in train_loader:
+    for x, y in tqdm.tqdm(train_loader):
 
         x = x.to(DEVICE)
         y = y.to(DEVICE)
 
-        print(step_, end='\t')
+
         step_ += 1
 
 
@@ -93,15 +96,17 @@ def validation_g(generator,
                 val_loader,
                  logging=False):
 
+    DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
 
     loss_ = 0
     step_ = 0
-    for x, y in val_loader:
+    for x, y in tqdm.tqdm(val_loader):
 
         x = x.to(DEVICE)
         y = y.to(DEVICE)
 
-        print(step_, end='\t')
+
         step_ += 1
         fake = generator(x)
         loss = F.l1_loss(fake, y)
@@ -134,6 +139,8 @@ def train(generator,
           logging=False,
           path_last_epoch='pix2pix'
           ):
+    DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
     best_loss = best_loss
 
     generator.train()
@@ -185,18 +192,20 @@ def train_epoch(generator,
                 train_loader,
                 logging=False):
 
+    DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
 
     g_loss_ = 0
     d_loss_ = 0
     gan_loss_ = 0
     l1_loss_ = 0
     step_ = 0
-    for x, y in train_loader:
+    for x, y in tqdm.tqdm(train_loader):
 
         x = x.to(DEVICE)
         y = y.to(DEVICE)
 
-        print(step_, end='\t')
+        
         step_ += 1
 
 
@@ -278,6 +287,9 @@ def validation(generator,
                  logging=False):
 
 
+    DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+
     g_loss_, d_loss_ = 0, 0
     step_ = 0
     gan_loss_ = 0
@@ -290,12 +302,12 @@ def validation(generator,
     discriminator = discriminator.to(DEVICE)
 
     with torch.no_grad():
-        for x, y in val_loader:
+        for x, y in tqdm.tqdm(val_loader):
 
             x = x.to(DEVICE)
             y = y.to(DEVICE)
 
-            print(step_, end='\t')
+
             step_ += 1
 
             discr_output_real = discriminator(y, x)
