@@ -6,4 +6,4 @@ It is a repository for MLDM homeworks and the project.
 
 
 
-[The code for preprocessing raw pictures](https://github.com/KoganA00/MLDM_homeworks/blob/main/funko_pop_preprocessing.ipynb)https://github.com/KoganA00/MLDM_homeworks/blob/main/funko_pop_preprocessing.ipynb
+[The code for preprocessing raw pictures](https://github.com/KoganA00/MLDM_homeworks/blob/main/funko_pop_preprocessing.ipynb)
