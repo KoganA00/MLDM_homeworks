@@ -2,7 +2,9 @@
 
 It is a repository for MLDM homeworks and the project.
 
-The [notebook](https://github.com/KoganA00/MLDM_homeworks/blob/main/funkopop_pix2pix.ipynb) to show
+The [notebook with Funko Pops](https://github.com/KoganA00/MLDM_homeworks/blob/main/funkopop_pix2pix.ipynb) to show
+
+Notebooks for facades: proper way and [other way](https://github.com/KoganA00/MLDM_homeworks/blob/main/facades_other_way.ipynb)
 
 [The intermediate report ](https://github.com/KoganA00/MLDM_homeworks/blob/main/Kogan_mldm_intermediate_report.pdf)
 
