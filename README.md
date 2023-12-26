@@ -4,7 +4,7 @@ It is a repository for MLDM homeworks and the project.
 
 The [notebook with Funko Pops](https://github.com/KoganA00/MLDM_homeworks/blob/main/funkopop_pix2pix.ipynb) to show
 
-![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/KoganA00/MLDM_homeworks/blob/main/examples/more_examples_final_funkopops.jpg)?raw=true)
+![Final Funko Pops]([[https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/KoganA00/MLDM_homeworks/blob/main/examples/more_examples_final_funkopops.jpg)](https://github.com/KoganA00/MLDM_homeworks/blob/main/examples/more_examples_final_funkopops.jpg)?raw=true)
 
 Notebooks for facades: proper way and [other way](https://github.com/KoganA00/MLDM_homeworks/blob/main/facades_other_way.ipynb)
 
