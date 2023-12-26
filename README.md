@@ -16,5 +16,7 @@ Notebooks for facades: proper way and [other way](https://github.com/KoganA00/ML
 
 [Ths Funko Pop dataset](https://drive.google.com/drive/folders/1dRs_q9pe_QHwCpRR-S5bF7mGGvZTflc5?usp=sharing)
 
+[The notebook with various transforms](https://github.com/KoganA00/MLDM_homeworks/blob/main/plot_transforms%20(1)%20(1).ipynb)
+
 
 
