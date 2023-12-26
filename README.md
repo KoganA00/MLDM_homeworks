@@ -6,7 +6,7 @@ The [notebook with Funko Pops](https://github.com/KoganA00/MLDM_homeworks/blob/m
 
 ![Funko Pop demonstration](https://github.com/KoganA00/MLDM_homeworks/blob/main/examples/more_examples_final_funkopops.jpg)
 
-Notebooks for facades: proper way and [other way](https://github.com/KoganA00/MLDM_homeworks/blob/main/facades_other_way.ipynb)
+Notebooks for facades: [proper way](https://github.com/KoganA00/MLDM_homeworks/blob/main/facades.ipynb) and [other way](https://github.com/KoganA00/MLDM_homeworks/blob/main/facades_other_way.ipynb)
 
 ![Facades demonstration](https://github.com/KoganA00/MLDM_homeworks/blob/main/examples/more_examples_final_facades.jpg)
 
